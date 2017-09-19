@@ -1,0 +1,1054 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Quick Reading'
+  ClientHeight = 775
+  ClientWidth = 480
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnKeyUp = FormKeyUp
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object TabControl1: TTabControl
+    Align = Client
+    FullSize = True
+    Size.Width = 480.000000000000000000
+    Size.Height = 775.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = None
+    object tabPrincipal: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'tabPrincipal'
+      object ToolBar1: TToolBar
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label1: TLabel
+          Align = Contents
+          Size.Width = 480.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Quick Reading Pro'
+        end
+        object btnSair: TSpeedButton
+          Align = Left
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'stoptoolbutton'
+          Text = 'btnSair'
+          OnClick = btnSairClick
+        end
+        object btnSobre: TSpeedButton
+          Align = Right
+          Position.X = 384.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'infotoolbutton'
+          Text = 'btnSobre'
+          OnClick = btnSobreClick
+        end
+        object btnConfig: TSpeedButton
+          Align = Right
+          Position.X = 432.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'detailstoolbutton'
+          Text = 'btnConfig'
+          OnClick = btnConfigClick
+        end
+      end
+      object ListBoxDocumentos: TListBox
+        Align = Client
+        Size.Width = 480.000000000000000000
+        Size.Height = 679.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+      end
+      object ToolBar5: TToolBar
+        Align = Bottom
+        Position.Y = 727.000000000000000000
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object btnAdicionarDocumento: TSpeedButton
+          Align = Left
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'additembutton'
+          Text = 'btnAdicionarDocumento'
+          OnClick = btnAdicionarDocumentoClick
+        end
+        object btnApagarDocumento: TSpeedButton
+          Align = Left
+          Position.X = 48.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'trashtoolbutton'
+          Text = 'btnAddDocumento'
+          OnClick = btnApagarDocumentoClick
+        end
+        object btnAlterarDocumento: TSpeedButton
+          Align = Left
+          Position.X = 96.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'composetoolbutton'
+          Text = 'btnAddDocumento'
+          OnClick = btnAlterarDocumentoClick
+        end
+        object btnLerDocumento: TSpeedButton
+          Align = Right
+          Position.X = 432.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'pagecurltoolbutton'
+          Text = 'btnAddDocumento'
+          OnClick = btnLerDocumentoClick
+        end
+      end
+    end
+    object tabSobre: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'tabSobre'
+      object ToolBar3: TToolBar
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label2: TLabel
+          Align = Contents
+          Size.Width = 480.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Sobre o Aplicativo'
+        end
+      end
+      object ToolBar8: TToolBar
+        Align = Bottom
+        Position.Y = 727.000000000000000000
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object btnOK_tabSobre: TSpeedButton
+          Align = Contents
+          Size.Width = 480.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'OK'
+          OnClick = btnOK_tabSobreClick
+        end
+      end
+      object ListBox1: TListBox
+        Align = Client
+        Size.Width = 480.000000000000000000
+        Size.Height = 679.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        object ListBoxItem1: TListBoxItem
+          Selectable = False
+          Size.Width = 480.000000000000000000
+          Size.Height = 55.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Label5: TLabel
+            Align = Top
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 460.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'listboxheaderlabel'
+            Text = 'Aplicativo'
+          end
+          object Label3: TLabel
+            Align = Top
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 28.000000000000000000
+            Size.Width = 460.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Quick Reading'
+          end
+        end
+        object ListBoxItem2: TListBoxItem
+          Selectable = False
+          Position.Y = 55.000000000000000000
+          Size.Width = 480.000000000000000000
+          Size.Height = 55.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Label14: TLabel
+            Align = Top
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 460.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'listboxheaderlabel'
+            Text = 'Licen'#231'a'
+          end
+          object lblLicenca: TLabel
+            Align = Top
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 28.000000000000000000
+            Size.Width = 460.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Pro'
+          end
+        end
+        object ListBoxItem3: TListBoxItem
+          Selectable = False
+          Position.Y = 110.000000000000000000
+          Size.Width = 480.000000000000000000
+          Size.Height = 55.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Label6: TLabel
+            Align = Top
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 460.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'listboxheaderlabel'
+            Text = 'Vers'#227'o'
+          end
+          object Label7: TLabel
+            Align = Top
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 28.000000000000000000
+            Size.Width = 460.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            Text = '2.1.0'
+          end
+        end
+        object ListBoxItem4: TListBoxItem
+          Selectable = False
+          Position.Y = 165.000000000000000000
+          Size.Width = 480.000000000000000000
+          Size.Height = 55.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object Label8: TLabel
+            Align = Top
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 460.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'listboxheaderlabel'
+            Text = 'Copyright'
+          end
+          object Label9: TLabel
+            Align = Top
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 28.000000000000000000
+            Size.Width = 460.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Marcelo Hanel'
+          end
+        end
+        object ListBoxItem5: TListBoxItem
+          Selectable = False
+          Position.Y = 220.000000000000000000
+          Size.Width = 480.000000000000000000
+          Size.Height = 55.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object Label10: TLabel
+            Align = Top
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 460.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'listboxheaderlabel'
+            Text = 'Contato'
+          end
+          object Label11: TLabel
+            Align = Top
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 28.000000000000000000
+            Size.Width = 460.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'hanelmarcelo@gmail.com'
+          end
+        end
+      end
+    end
+    object tabConfig: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'tabConfig'
+      object ToolBar2: TToolBar
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label4: TLabel
+          Align = Contents
+          Size.Width = 480.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Configura'#231#245'es'
+        end
+      end
+      object ToolBar4: TToolBar
+        Align = Bottom
+        Position.Y = 727.000000000000000000
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object btnConfirmar: TSpeedButton
+          Align = Left
+          Size.Width = 110.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'donetoolbutton'
+          Text = 'Confirmar'
+          OnClick = btnConfirmarClick
+        end
+        object btnCancelar: TSpeedButton
+          Align = Right
+          Position.X = 370.000000000000000000
+          Size.Width = 110.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'deletetoolbutton'
+          Text = 'Cancelar'
+          OnClick = btnCancelarClick
+        end
+      end
+      object ListBox2: TListBox
+        Align = Client
+        Size.Width = 480.000000000000000000
+        Size.Height = 679.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        object ListBoxItem6: TListBoxItem
+          Selectable = False
+          Size.Width = 480.000000000000000000
+          Size.Height = 70.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Label12: TLabel
+            Align = Top
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 460.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'listboxheaderlabel'
+            Text = 'Palavras por Minuto'
+          end
+          object cbxPalavras: TComboBox
+            Align = Top
+            DisableFocusEffect = False
+            ItemIndex = 0
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 33.000000000000000000
+            Size.Width = 460.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object TListBoxItem
+              IsSelected = True
+              TabOrder = 0
+              Text = '250'
+            end
+            object TListBoxItem
+              TabOrder = 1
+              Text = '350'
+            end
+            object TListBoxItem
+              TabOrder = 2
+              Text = '450'
+            end
+            object TListBoxItem
+              TabOrder = 3
+              Text = '550'
+            end
+            object TListBoxItem
+              TabOrder = 4
+              Text = '650'
+            end
+            object TListBoxItem
+              TabOrder = 5
+              Text = '750'
+            end
+            object TListBoxItem
+              TabOrder = 6
+              Text = '850'
+            end
+            object TListBoxItem
+              TabOrder = 7
+              Text = '950'
+            end
+            object TListBoxItem
+              TabOrder = 8
+              Text = '1000'
+            end
+          end
+        end
+        object ListBoxItem7: TListBoxItem
+          Selectable = False
+          Position.Y = 70.000000000000000000
+          Size.Width = 480.000000000000000000
+          Size.Height = 70.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Label13: TLabel
+            Align = Top
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 460.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'listboxheaderlabel'
+            Text = 'Palavras para Pausa'
+          end
+          object cbxPausa: TComboBox
+            Align = Top
+            DisableFocusEffect = False
+            ItemIndex = 0
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 33.000000000000000000
+            Size.Width = 460.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object TListBoxItem
+              IsSelected = True
+              TabOrder = 0
+              Text = '50'
+            end
+            object TListBoxItem
+              TabOrder = 1
+              Text = '100'
+            end
+            object TListBoxItem
+              TabOrder = 2
+              Text = '200'
+            end
+            object TListBoxItem
+              TabOrder = 3
+              Text = '300'
+            end
+            object TListBoxItem
+              TabOrder = 4
+              Text = '400'
+            end
+            object TListBoxItem
+              TabOrder = 5
+              Text = '500'
+            end
+            object TListBoxItem
+              TabOrder = 6
+              Text = '600'
+            end
+            object TListBoxItem
+              TabOrder = 7
+              Text = '700'
+            end
+            object TListBoxItem
+              TabOrder = 8
+              Text = '800'
+            end
+            object TListBoxItem
+              TabOrder = 9
+              Text = '900'
+            end
+          end
+        end
+      end
+    end
+    object tabConfirmaApagar: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'tabConfirmaApagar'
+      object ToolBar6: TToolBar
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label15: TLabel
+          Align = Contents
+          Size.Width = 480.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Confirmar'
+        end
+      end
+      object ToolBar7: TToolBar
+        Align = Bottom
+        Position.Y = 727.000000000000000000
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object btnConfimarApagar: TSpeedButton
+          Align = Left
+          Size.Width = 110.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'donetoolbutton'
+          Text = 'Confirmar'
+          OnClick = btnConfimarApagarClick
+        end
+        object btnCancelaApagar: TSpeedButton
+          Align = Right
+          Position.X = 370.000000000000000000
+          Size.Width = 110.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'deletetoolbutton'
+          Text = 'Cancelar'
+          OnClick = btnCancelaApagarClick
+        end
+      end
+      object Label16: TLabel
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 58.000000000000000000
+        Size.Width = 460.000000000000000000
+        Size.Height = 129.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.VertAlign = Leading
+        Text = 'Deseja realmente apagar o documento selecionado ?'
+      end
+    end
+    object tabLeitura: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'tabLeitura'
+      object ToolBar9: TToolBar
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label17: TLabel
+          Align = Contents
+          Size.Width = 480.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Leitura do Documento'
+        end
+        object SpeedButton3: TSpeedButton
+          Align = Left
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowlefttoolbutton'
+          Text = 'SpeedButton3'
+          OnClick = SpeedButton3Click
+        end
+      end
+      object ToolBar10: TToolBar
+        Align = Bottom
+        Position.Y = 727.000000000000000000
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object btnInicio: TSpeedButton
+          Align = Left
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'refreshtoolbutton'
+          Text = 'In'#237'cio'
+          OnClick = btnInicioClick
+        end
+        object btnContinuar: TSpeedButton
+          Align = Right
+          Position.X = 432.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'playtoolbutton'
+          Text = 'In'#237'cio'
+          OnClick = btnContinuarClick
+        end
+        object btnAnterior: TSpeedButton
+          Align = Left
+          Position.X = 48.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'rewindtoolbutton'
+          Text = 'In'#237'cio'
+          OnClick = btnAnteriorClick
+        end
+      end
+      object lblPalavra: TLabel
+        Align = Center
+        StyledSettings = [Style, FontColor]
+        Size.Width = 320.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Courier New'
+        TextSettings.Font.Size = 26.000000000000000000
+        Text = 'ZZZZZZZZZZZZZZZZZZZZ'
+      end
+      object lblDestaque: TLabel
+        Align = Center
+        StyledSettings = [Style]
+        Size.Width = 320.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Courier New'
+        TextSettings.Font.Size = 26.000000000000000000
+        TextSettings.FontColor = claRed
+        Text = 'ZZZZZZZZZZZZZZZZZZZZ'
+      end
+      object Label21: TLabel
+        Align = Bottom
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 676.000000000000000000
+        Size.Width = 460.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Palavras:'
+      end
+      object Label25: TLabel
+        Align = Bottom
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 699.000000000000000000
+        Size.Width = 460.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Atual:'
+      end
+    end
+    object tabDocumento: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'tabDocumento'
+      object ToolBar11: TToolBar
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label18: TLabel
+          Align = Contents
+          Size.Width = 480.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Documento'
+        end
+      end
+      object ToolBar12: TToolBar
+        Align = Bottom
+        Position.Y = 727.000000000000000000
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object SpeedButton1: TSpeedButton
+          Align = Left
+          Size.Width = 110.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'donetoolbutton'
+          Text = 'Confirmar'
+          OnClick = SpeedButton1Click
+        end
+        object SpeedButton2: TSpeedButton
+          Align = Right
+          Position.X = 370.000000000000000000
+          Size.Width = 110.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'deletetoolbutton'
+          Text = 'Cancelar'
+          OnClick = SpeedButton2Click
+        end
+        object SpeedButton8: TSpeedButton
+          Align = Center
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'organizetoolbutton'
+          Text = 'SpeedButton8'
+          OnClick = SpeedButton8Click
+        end
+      end
+      object Label19: TLabel
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 53.000000000000000000
+        Size.Width = 460.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxheaderlabel'
+        Text = 'T'#237'tulo'
+      end
+      object edtTitulo: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 3
+        Position.X = 10.000000000000000000
+        Position.Y = 81.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Size.Width = 460.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        KillFocusByReturn = True
+        object ClearEditButton1: TClearEditButton
+          CanFocus = False
+          Cursor = crArrow
+          Size.Width = 32.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+      object Label20: TLabel
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 118.000000000000000000
+        Size.Width = 460.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxheaderlabel'
+        Text = 'Texto'
+      end
+      object mmoTexto: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 460.000000000000000000
+        Size.Height = 576.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        TextSettings.WordWrap = True
+      end
+    end
+    object tabArquivos: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'tabArquivos'
+      object ToolBar13: TToolBar
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label22: TLabel
+          Align = Contents
+          Size.Width = 480.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Documentos'
+        end
+      end
+      object ToolBar14: TToolBar
+        Align = Bottom
+        Position.Y = 727.000000000000000000
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object SpeedButton5: TSpeedButton
+          Align = Left
+          Size.Width = 110.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'donetoolbutton'
+          Text = 'Confirmar'
+          OnClick = SpeedButton5Click
+        end
+        object SpeedButton6: TSpeedButton
+          Align = Right
+          Position.X = 370.000000000000000000
+          Size.Width = 110.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'deletetoolbutton'
+          Text = 'Cancelar'
+          OnClick = SpeedButton6Click
+        end
+      end
+      object TreeView1: TTreeView
+        Align = Client
+        Size.Width = 480.000000000000000000
+        Size.Height = 569.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+      end
+      object Label23: TLabel
+        Align = Bottom
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 640.000000000000000000
+        Size.Width = 460.000000000000000000
+        Size.Height = 87.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.VertAlign = Leading
+        Text = '.'
+      end
+      object Label24: TLabel
+        Align = Bottom
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 617.000000000000000000
+        Size.Width = 460.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxheaderlabel'
+        Text = 'Local dos Documentos'
+      end
+    end
+    object tabProcesso: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'tabProcesso'
+      object ToolBar15: TToolBar
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblMensagem: TLabel
+          Align = Contents
+          Size.Width = 480.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Aguarde'
+        end
+      end
+      object lblGeral: TLabel
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 58.000000000000000000
+        Size.Width = 460.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxheaderlabel'
+        Text = 'Progresso Geral'
+      end
+      object pgbTarefa: TProgressBar
+        Align = Top
+        Orientation = Horizontal
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 111.000000000000000000
+        Size.Width = 460.000000000000000000
+        Size.Height = 10.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object pgbGeral: TProgressBar
+        Align = Top
+        Orientation = Horizontal
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 91.000000000000000000
+        Size.Width = 460.000000000000000000
+        Size.Height = 10.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object bdDados: TSQLConnection
+    ConnectionName = 'QuickReading'
+    DriverName = 'SQLite'
+    LoginPrompt = False
+    Params.Strings = (
+      'DriverName=SQLite'
+      'DriverUnit=Data.DbxSqlite'
+      
+        'DriverPackageLoader=TDBXSqliteDriverLoader,DBXSqliteDriver170.bp' +
+        'l'
+      
+        'MetaDataPackageLoader=TDBXSqliteMetaDataCommandFactory,DbxSqlite' +
+        'Driver170.bpl'
+      'FailIfMissing=False'
+      'Database=C:\jedi\QuickReadingPro\Portugues\database.db3')
+    AfterConnect = bdDadosAfterConnect
+    BeforeConnect = bdDadosBeforeConnect
+    Left = 327
+    Top = 97
+  end
+  object ActionList1: TActionList
+    Left = 400
+    Top = 96
+    object cngPrincipal: TChangeTabAction
+      Tab = tabPrincipal
+    end
+    object cngSobre: TChangeTabAction
+      Tab = tabSobre
+    end
+    object cngConfig: TChangeTabAction
+      Tab = tabConfig
+    end
+    object cngConfirmaApagar: TChangeTabAction
+      Tab = tabConfirmaApagar
+    end
+    object cngLeitura: TChangeTabAction
+      Tab = tabLeitura
+    end
+    object cngDocumento: TChangeTabAction
+      Tab = tabDocumento
+    end
+    object cngArquivos: TChangeTabAction
+      Tab = tabArquivos
+    end
+    object cngProcesso: TChangeTabAction
+      Tab = tabProcesso
+    end
+  end
+end

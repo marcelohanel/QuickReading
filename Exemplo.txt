@@ -1,0 +1,8 @@
+O aplicativo QuickReading pretende revolucionar o modo como funciona a leitura virtual. 
+Enquanto os leitores tradicionais normalmente procuram ser o mais parecido possível com livros reais, o QuickReading pretende mudar essa forma tradicional de ler. 
+No modo de leitura normal, você precisa mover sua visão, acompanhando as palavras pelas linhas. 
+Entretanto, no QuickReading o texto será mostrado com as palavras no mesmo lugar, destacando sempre uma letra chave. 
+Nesse sentido, você economiza muito mais tempo de leitura. 
+A velocidade de leitura proposta pelo QuickReading pode variar de 250 à 1000 palavras por minuto. 
+A princípio, é difícil ler com uma velocidade tão grande. Entretanto, com o tempo, a tendência é que o cérebro se acostume e se torne uma atividade natural. 
+Com a velocidade máxima do aplicativo, seria possível ler um livro de 300 páginas em pouco mais de uma hora. 
